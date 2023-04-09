@@ -158,13 +158,13 @@ with st.expander("Manage Power point Presentation"):
             col2.button("View", key=Name, on_click=display_pdf,
                         args=(DATA_DIR, Name))  # unique ID
             delete_status = True
-        else:
-            col2.write("N/A")
-            delete_status = False
-        button_type = "Delete" if delete_status else "Gone"
-        button_phold = col3.empty()  # create a placeholder
-        do_action = button_phold.button(
-            button_type, key=i, on_click=delete_file, args=(DATA_DIR, Name))
+        #else:
+        #     col2.write("N/A")
+        #     delete_status = False
+        # button_type = "Delete" if delete_status else "Gone"
+        # button_phold = col3.empty()  # create a placeholder
+        # do_action = button_phold.button(
+        #     button_type, key=i, on_click=delete_file, args=(DATA_DIR, Name))
 
 
 # Get a list of available index files in the data directory
