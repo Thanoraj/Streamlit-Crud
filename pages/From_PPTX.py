@@ -139,7 +139,7 @@ with st.expander("Manage Power point Presentation"):
     files = os.listdir(DATA_DIR)
 
     # Filter out the JSON index files
-    files = [f for f in files if not f.endswith(".json")]
+    files = [f for f in files if f.endswith(".pdf")]
 
     colms = st.columns((4, 1, 1))
 
