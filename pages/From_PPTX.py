@@ -80,7 +80,7 @@ def display_pdf(DATA_DIR, pdf_file):
 def delete_file(DATA_DIR, file_name):
     pdf_path = os.path.join(DATA_DIR, file_name)
     json_path = os.path.join(
-        DATA_DIR, os.path.splitext(file_name)[0] + ".json")
+        DATA_DIR, os.path.splitext(file_name)[0] + "_ppt.json")
     if os.path.exists(pdf_path):
         os.remove(pdf_path)
         st.success(f"File {file_name} deleted successfully!")
@@ -139,7 +139,7 @@ with st.expander("Manage Power point Presentation"):
     files = os.listdir(DATA_DIR)
 
     # Filter out the JSON index files
-    files = [f for f in files if not f.endswith(".json")]
+    files = [f for f in files if not f.endswith("_ppt.json")]
 
     colms = st.columns((4, 1, 1))
 
