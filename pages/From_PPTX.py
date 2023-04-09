@@ -108,7 +108,7 @@ DATA_DIR = "data"
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
 
-with st.expander("Manage_Books"):
+with st.expander("Manage Power point Presentation"):
     st.subheader("PPT document Management Portal")
     # Create a file uploader widget
     uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
