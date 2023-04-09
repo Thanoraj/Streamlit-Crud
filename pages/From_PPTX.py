@@ -153,18 +153,18 @@ with st.expander("Manage Power point Presentation"):
         i += 1
         col1, col2, col3 = st.columns((4, 1, 1))
         # col1.write(x)  # index
-        col1.caption(Name)  # email
+        col1.caption(Name) 
         if Name.endswith(".pdf"):
             col2.button("View", key=Name, on_click=display_pdf,
                         args=(DATA_DIR, Name))  # unique ID
             delete_status = True
-        #else:
-        #     col2.write("N/A")
-        #     delete_status = False
-        # button_type = "Delete" if delete_status else "Gone"
-        # button_phold = col3.empty()  # create a placeholder
-        # do_action = button_phold.button(
-        #     button_type, key=i, on_click=delete_file, args=(DATA_DIR, Name))
+        else:
+            col2.write("N/A")
+            delete_status = False
+        button_type = "Delete" if delete_status else "Gone"
+        button_phold = col3.empty()  # create a placeholder
+        do_action = button_phold.button(
+            button_type, key=i, on_click=delete_file, args=(DATA_DIR, Name))
 
 
 # Get a list of available index files in the data directory
