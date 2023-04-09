@@ -111,7 +111,7 @@ if not os.path.exists(DATA_DIR):
 with st.expander("Manage Power point Presentation"):
     st.subheader("PPT document Management Portal")
     # Create a file uploader widget
-    uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
+    uploaded_file = st.file_uploader("Upload a PPT document", type="pptx")
 
     # Check if a file was uploaded
     if uploaded_file is not None:
