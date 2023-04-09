@@ -56,7 +56,7 @@ loader = PDFReader()
 
 
 # favicon = "favicon.ac8d93a.69085235180674d80d902fdc4b848d0b (1).png"
-st.set_page_config(page_title="PDFbot Virtual Assistant", page_icon=None)
+#st.set_page_config(page_title="PDFbot Virtual Assistant", page_icon=None)
 
 
 openai.api_key = os.getenv("API_KEY")
